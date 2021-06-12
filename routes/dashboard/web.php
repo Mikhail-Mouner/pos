@@ -10,9 +10,10 @@ Route::group(
     ], function()
 {
 
-    Route::prefix('dashboard')->name('dashboard.')->group(function () {
+    Route::prefix('dashboard')->name('dashboard.')->middleware('auth')->group(function () {
 
         Route::get('/', 'DashboardController@index')->name('index');
+        Route::resource('users', 'UserController')->names('user');
 
 
     });

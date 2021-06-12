@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/form/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/messages/_alert.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/messages/_errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/short.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/short.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/dashboard/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +40,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,6 +167,8 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
+      <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
+      <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tDnnOcQTtDEmpC2XRi6fAhuDHn" />
@@ -142,14 +182,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/ar" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\pos\resources\views\layouts" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
-      <recent name="E:\xampp\htdocs\pos\resources\lang" />
-      <recent name="E:\xampp\htdocs\pos\routes\dashboard" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\pos\resources\lang\ar" />
+      <recent name="E:\xampp\htdocs\pos\resources\views\messages" />
+      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\users\form" />
+      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\users" />
+      <recent name="E:\xampp\htdocs\pos\resources\lang\en" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,25 +226,61 @@
       <updated>1622312697843</updated>
       <workItem from="1622312732253" duration="1491000" />
       <workItem from="1622812795458" duration="1596000" />
-      <workItem from="1622894844368" duration="8656000" />
+      <workItem from="1622894844368" duration="22993000" />
+      <workItem from="1623002229689" duration="6794000" />
+      <workItem from="1623424942215" duration="12670000" />
+      <workItem from="1623489243835" duration="1320000" />
+      <workItem from="1623503121113" duration="313000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
+      <created>1622930622455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622930622455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Ar &amp; En files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Ar &amp; En files" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1622903328500">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1622930613563">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622903328500" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1622895725055">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1622930613563" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1623427871732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1622895725055" />
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1622902819017">
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1623427871732" />
+    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1623429087710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1622902819017" />
+    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1623429087710" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1622920285255">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1622920285255" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1623503243578">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1623503243578" />
+    <state x="645" y="106" width="718" height="703" key="dock-window-1" timestamp="1623427989265">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="645" y="106" width="718" height="703" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1623427989265" />
+    <state x="339" y="157" width="672" height="677" key="run.anything.popup" timestamp="1623446374271">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1623446374271" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1623501865893">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1623501865893" />
   </component>
 </project>

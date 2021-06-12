@@ -109,6 +109,8 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
+      <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
+      <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
     </include_path>
   </component>
   <component name="PhpUnit">

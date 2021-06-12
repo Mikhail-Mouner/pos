@@ -33,4 +33,8 @@ return [
     'done' => 'Done',
     'Comment' => 'Comment',
     'reply' => 'Reply',
+    'add' => 'Add',
+    /* Todo : translate to arabic*/
+    'create' => 'Create',
+    'read' => 'Read',
 ];

@@ -20,6 +20,9 @@ return [
     'details' => 'Details',
     'description' => 'Description',
     'name' => 'Name',
+    'password' => 'Password',
+    'first name' => 'First Name',
+    'last name' => 'Last Name',
     'position' => 'Position',
     'messages' => 'Messages',
     'code' => 'Code',
@@ -44,4 +47,8 @@ return [
     'status' => 'Status',
     'categories' => 'Categories',
     'category' => 'Category',
+    /* Todo : translate to arabic*/
+    'product' => 'product',
+    'products' => 'products',
+
 ];

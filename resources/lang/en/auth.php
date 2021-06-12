@@ -21,5 +21,14 @@ return [
     'Register' => 'Register',
     'sign-up' => 'Sign-Up',
     'not authorized page' => 'Not Allowed to Navigate this Page',
+    "users" => "Users",
+    "user" => "User",
+    "admin" => "Admin",
+    "admins" => "Admins",
+    "super admin" => "Super Admin",
+    "super admins" => "Super Admins",
+    /* Todo : translate to arabic*/
+    "permissions" => "Permissions",
+    "permission" => "Permission",
 
 ];

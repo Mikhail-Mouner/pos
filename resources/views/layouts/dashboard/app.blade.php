@@ -286,7 +286,7 @@
                                     <div class="w--50 h--50 mb-2 mt-1 rounded-circle bg-cover bg-light float-start" style="background-image:url('../../html_frontend/demo.files/images/icons/user80.png')"></div>
 
                                     <!-- author -->
-                                    <strong class="d-block text-truncate">John Doe</strong>
+                                    <strong class="d-block text-truncate">{{ auth()->user()->first_name }}</strong>
 
                                     <!-- subject -->
                                     <p class="fs--14 m-0 text-truncate font-weight-normal">
@@ -412,7 +412,7 @@
 										<i class="fi w--15 fi-close"></i>
 									</span>
 
-                            <span class="fs--14 d-none d-sm-inline-block font-weight-medium">John D.</span>
+                            <span class="fs--14 d-none d-sm-inline-block font-weight-medium">{{ auth()->user()->first_name }}</span>
                         </a>
 
 
@@ -443,14 +443,14 @@
 
                                 <!-- initials - no image -->
                                 <!--
-                                <div data-initials="John Doe" data-assign-color="true" class="sow-util-initials bg-light rounded h5 w--60 h--60 d-inline-flex justify-content-center align-items-center rounded-circle float-start">
+                                <div data-initials="Username" data-assign-color="true" class="sow-util-initials bg-light rounded h5 w--60 h--60 d-inline-flex justify-content-center align-items-center rounded-circle float-start">
                                     <i class="fi fi-circle-spin fi-spin"></i>
                                 </div>
                                 -->
 
                                 <!-- user detail -->
-                                <span class="d-block font-weight-medium text-truncate fs--16">John Doe</span>
-                                <span class="d-block text-muted font-weight-medium text-truncate">john.doe@gmail.com</span>
+                                <span class="d-block font-weight-medium text-truncate fs--16">{{ auth()->user()->first_name }}</span>
+                                <span class="d-block text-muted font-weight-medium text-truncate">{{ auth()->user()->email }}</span>
                                 <small class="d-block text-muted"><b>Last Login:</b> 2019-09-03 01:48</small>
 
                             </div>

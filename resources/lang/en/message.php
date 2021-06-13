@@ -1,8 +1,11 @@
 <?php
 
 return [
+    'are you sure' => 'Are You Sure',
     'new user' => 'New User Added Successfully',
-    'edit user' => 'Edited Successfully',
+    'edit user' => 'User\'s Data Edited Successfully',
+    'delete user' => 'User Deleted Successfully',
     'add' => 'Added Successfully',
     'edit' => 'Edited Successfully',
+    'delete' => 'Deleted Successfully',
 ];

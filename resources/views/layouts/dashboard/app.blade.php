@@ -439,7 +439,7 @@
                             <div class="dropdown-header fs--14 py-4">
 
                                 <!-- profile image -->
-                                <div class="w--60 h--60 rounded-circle bg-light bg-cover float-start" style="background-image:url('../../html_frontend/demo.files/images/icons/user80.png')"></div>
+                                <div class="w--60 h--60 rounded-circle bg-light bg-cover float-start" style="background-image:url('{{ auth()->user()->image_path }}')"></div>
 
                                 <!-- initials - no image -->
                                 <!--
@@ -451,45 +451,19 @@
                                 <!-- user detail -->
                                 <span class="d-block font-weight-medium text-truncate fs--16">{{ auth()->user()->first_name }}</span>
                                 <span class="d-block text-muted font-weight-medium text-truncate">{{ auth()->user()->email }}</span>
-                                <small class="d-block text-muted"><b>Last Login:</b> 2019-09-03 01:48</small>
+                                <small class="d-block text-muted"><b>{{ __('details.last login') }}:</b> {{ auth()->user()->previousLoginAt()->diffForHumans() }}</small>
 
                             </div>
 
-                            <div class="dropdown-divider"></div>
-
-                            <a href="#!" target="_blank" class="dropdown-item text-truncate font-weight-medium">
-                                Notes
-                                <small class="d-block text-muted">personal encypted notes</small>
-                            </a>
-
-                            <a href="#!" target="_blank" class="dropdown-item text-truncate font-weight-medium">
-                                <span class="badge badge-success float-end font-weight-normal mt-1">3 new</span>
-                                Messages
-                                <small class="d-block text-muted">internal messaging system</small>
-                            </a>
-
-                            <a href="#!" target="_blank" class="dropdown-item text-truncate font-weight-medium">
-                                <span class="badge badge-danger float-end font-weight-normal mt-1">1 unpaid</span>
-                                Invoices
-                                <small class="d-block text-muted">montly billing</small>
-                            </a>
-
-                            <a href="#!" class="dropdown-item text-truncate font-weight-medium">
-                                Account Settings
-                                <small class="d-block text-muted">profile, password and more...</small>
-                            </a>
-
-                            <a href="#!" class="dropdown-item text-truncate font-weight-medium">
-                                Upgrade
-                                <small class="d-block text-muted">upgrade your account</small>
-                            </a>
-
                             <div class="dropdown-divider mb-0"></div>
 
-                            <a href="#!" class="prefix-icon-ignore dropdown-footer dropdown-custom-ignore font-weight-medium pt-3 pb-3">
-                                <i class="fi fi-power float-start"></i>
-                                Log Out
-                            </a>
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button type="submit" class="prefix-icon-ignore dropdown-footer dropdown-custom-ignore font-weight-medium pt-3 pb-3 btn-block btn-link border-0">
+                                    <i class="fi fi-power float-start"></i>
+                                    {{ __('auth.logout') }}
+                                </button>
+                            </form>
                         </div>
 
                     </li>
@@ -563,9 +537,16 @@
                     <ul class="nav flex-column">
 
                         <li class="nav-item active">
-                            <a class="nav-link js-ajax" href="#">
+                            <a class="nav-link" href="{{ route('dashboard.index') }}">
                                 <i class="fi fi-menu-dots"></i>
-                                <b>Dashboard</b>
+                                <b>{{ __('page.dashboard') }}</b>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('dashboard.user.index') }}">
+                                <i class="fi fi-users"></i>
+                                <b>{{ __('auth.users') }}</b>
                             </a>
                         </li>
 
@@ -658,6 +639,14 @@
 
 
 <script src="{{ asset('assets/js/core.min.js') }}"></script>
+
+<script>
+
+    $('.btn-delete').on('click',function (e) {
+        return confirm('{{ __('message.are you sure') }}')
+    })
+
+</script>
 
 @yield('scripts')
 

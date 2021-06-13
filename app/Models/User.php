@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait;
+use Yadahan\AuthenticationLog\AuthenticationLogable;
 
 class User extends Authenticatable
 {
-    use LaratrustUserTrait;
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, LaratrustUserTrait, AuthenticationLogable;
+
+    protected $appends = ['image_path'];
 
     /**
      * The attributes that are mass assignable.
@@ -23,6 +25,7 @@ class User extends Authenticatable
         'last_name',
         'email',
         'password',
+        'image',
     ];
 
     /**
@@ -43,4 +46,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getFirstNameAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    public function getLastNameAttribute($value)
+    {
+        return ucfirst($value);
+    }
+    public function getImagePathAttribute($value)
+    {
+        return asset('uploads/user_images/'.$this->image);
+    }
+
 }

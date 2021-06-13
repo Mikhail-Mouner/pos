@@ -50,5 +50,6 @@ return [
     /* Todo : translate to arabic*/
     'product' => 'product',
     'products' => 'products',
+    'last login' => 'Last Login',
 
 ];

@@ -2,33 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/form/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/messages/_alert.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/messages/_errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UserRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/short.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/short.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/form/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/form/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/dashboard/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +160,8 @@
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
       <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
       <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/yadahan/laravel-authentication-log" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tDnnOcQTtDEmpC2XRi6fAhuDHn" />
@@ -185,15 +178,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/ar" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\xampp\htdocs\pos\resources\lang\ar" />
       <recent name="E:\xampp\htdocs\pos\resources\views\messages" />
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\users\form" />
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\users" />
       <recent name="E:\xampp\htdocs\pos\resources\lang\en" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\pos\public\uploads\user_images" />
+      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,7 +224,9 @@
       <workItem from="1623002229689" duration="6794000" />
       <workItem from="1623424942215" duration="12670000" />
       <workItem from="1623489243835" duration="1320000" />
-      <workItem from="1623503121113" duration="313000" />
+      <workItem from="1623503121113" duration="19015000" />
+      <workItem from="1623611561411" duration="655000" />
+      <workItem from="1623614366695" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
       <created>1622930622455</created>
@@ -239,21 +235,51 @@
       <option name="project" value="LOCAL" />
       <updated>1622930622455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding permission">
+      <created>1623503527991</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623503527991</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding Ar &amp; En files">
+      <created>1623503555569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623503555569</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Developing Dashboard/User Page">
+      <created>1623503603100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623503603100</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Developing Dashboard/User Page">
+      <created>1623503631147</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623503631147</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding permission" />
     <MESSAGE value="Adding Ar &amp; En files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Ar &amp; En files" />
+    <MESSAGE value="Developing Dashboard/User Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Developing Dashboard/User Page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1623503601585">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1623503629819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1623503601585" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1623503629819" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1623427871732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -262,14 +288,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1623429087710" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1622920285255">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1623524136169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1622920285255" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1623503243578">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1623524136169" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1623614396264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1623503243578" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1623614396264" />
     <state x="645" y="106" width="718" height="703" key="dock-window-1" timestamp="1623427989265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -278,9 +304,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1623446374271" />
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1623501865893">
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1623527194045">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1623501865893" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1623527194045" />
   </component>
 </project>

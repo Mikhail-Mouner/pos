@@ -40,6 +40,9 @@
 
                     <h2 class="h5 text-truncate w-100">
                         {{ __('auth.users') }}
+                        <small class="h6 text-info font-italic font-weight-lighter">
+                            ({{ $users->count() }})
+                        </small>
                         @if(auth()->user()->hasPermission('users_create'))
                             <a href="{{ route('dashboard.user.create') }}" class="btn-link">
                                 <i class="fi fi-plus"></i>
@@ -62,6 +65,32 @@
 
                 </header>
 
+                <div class="mt--30 mb--60">
+                    <form action="{{ route('dashboard.user.index') }}" method="get" autocomplete="off">
+                        <div class="row">
+
+                            <div class="col-md-8">
+                                <div class="form-label-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control form-control-clean"
+                                        placeholder="{{ __('data.search') }}"
+                                        id="search"
+                                        name="search"
+                                        @isset(request()->search)
+                                            value="{{ request()->search }}"
+                                        @endisset
+                                    />
+                                    <label for="password_confirmation">{{ __('data.search') }}</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary btn-block"><i class="fi fi-search"></i> {{ __('data.filter') }}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <div class="mt--30 mb--60">
                 @include('messages._alert')
 
@@ -112,9 +141,11 @@
                         <thead>
                         <tr>
                             <th>{{ __('details.code') }}</th>
+                            <th>{{ __('details.image') }}</th>
                             <th>{{ __('details.first name') }}</th>
                             <th>{{ __('details.last name') }}</th>
                             <th>{{ __('details.e-mail') }}</th>
+                            <th>{{ __('details.last login') }}</th>
                             <th>{{ __('auth.permissions') }}</th>
                             <th>{{ __('action.action') }}</th>
                         </tr>
@@ -123,9 +154,11 @@
                         @forelse($users as $user)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
+                                <td><div class="w--60 h--60 rounded-circle bg-light bg-cover float-start" style="background-image:url('{{ $user->image_path }}')"></div></td>
                                 <td>{{ $user->first_name }}</td>
                                 <td>{{ $user->last_name }}</td>
                                 <td>{{ $user->email }}</td>
+                                <td>{{ $user->lastLoginAt()?$user->lastLoginAt()->diffForHumans():'-' }}</td>
                                 <td>
                                     @forelse($user->allPermissions() as $permission)
                                         {{ '- '. $permission->display_name  }}<br />
@@ -135,13 +168,13 @@
                                 </td>
                                 <td>
                                     @if(auth()->user()->hasPermission('users_update'))
-                                        <a class="btn btn-success btn-sm" href="{{ route('dashboard.user.edit',$user->id) }}">{{ __('action.edit') }}</a>
+                                        <a class="btn btn-success btn-sm" href="{{ route('dashboard.user.edit',$user->id) }}"><i class="fi fi-pencil"></i> {{ __('action.edit') }}</a>
                                     @endif
                                     @if(auth()->user()->hasPermission('users_delete'))
                                         <form action="{{ route('dashboard.user.destroy',$user->id) }}" method="post" style="display: inline-block;">
                                             @csrf
                                             @method('delete')
-                                            <button class="btn btn-outline-danger btn-sm" type="submit">{{ __('action.delete') }}</button>
+                                            <button class="btn btn-outline-danger btn-sm btn-delete" type="submit"><i class="fi fi-thrash"></i> {{ __('action.delete') }}</button>
                                         </form>
                                     @endif
                                 </td>

@@ -111,6 +111,8 @@
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
       <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
       <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/yadahan/laravel-authentication-log" />
     </include_path>
   </component>
   <component name="PhpUnit">

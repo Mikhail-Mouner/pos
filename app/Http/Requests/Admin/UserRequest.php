@@ -35,6 +35,7 @@ class UserRequest extends FormRequest
                     'first_name' => 'required|string|min:3|max:191',
                     'last_name' => 'nullable|string|min:3|max:191',
                     'e_mail' => 'required|email|unique:users,email|min:3|max:191',
+                    'image' => 'image',
                     'password' => 'required|confirmed|string|min:6|max:191',
                 ];
             }
@@ -45,6 +46,7 @@ class UserRequest extends FormRequest
                     'first_name' => 'required|string|min:3|max:191',
                     'last_name' => 'nullable|string|min:3|max:191',
                     'e_mail' => 'required|email|unique:users,email,'.$this->user->id.'|min:3|max:191',
+                    'image' => 'image',
                     'password' => 'nullable|confirmed|string|min:6|max:191',
                 ];
             }

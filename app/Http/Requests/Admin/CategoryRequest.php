@@ -4,7 +4,7 @@ namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UserRequest extends FormRequest
+class CategoryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,6 +23,7 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
+
         switch($this->method()){
             case 'GET':
             {
@@ -36,24 +37,20 @@ class UserRequest extends FormRequest
             }
             case 'POST':
             {
-                return [
-                    'first_name' => 'required|string|min:3|max:191',
-                    'last_name' => 'nullable|string|min:3|max:191',
-                    'e_mail' => 'required|email|unique:users,email|min:3|max:191',
-                    'image' => 'image',
-                    'password' => 'required|confirmed|string|min:6|max:191',
-                ];
+                $return = [];
+                foreach (config('translatable.locales') as $locale){
+                    $return[$locale.'.name'] = 'required|string|unique:category_translations,name|min:3|max:191';
+                }
+                return $return;
             }
             case 'PUT':
             case 'PATCH':
             {
-                return [
-                    'first_name' => 'required|string|min:3|max:191',
-                    'last_name' => 'nullable|string|min:3|max:191',
-                    'e_mail' => 'required|email|unique:users,email,'.$this->user->id.'|min:3|max:191',
-                    'image' => 'image',
-                    'password' => 'nullable|confirmed|string|min:6|max:191',
-                ];
+                $return = [];
+                foreach (config('translatable.locales') as $locale){
+                    $return[$locale.'.name'] = 'required|string|unique:category_translations,name,'.$this->category->id.',category_id|min:3|max:191';
+                }
+                return $return;
             }
             default:break;
         }

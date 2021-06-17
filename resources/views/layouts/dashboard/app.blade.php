@@ -451,7 +451,7 @@
                                 <!-- user detail -->
                                 <span class="d-block font-weight-medium text-truncate fs--16">{{ auth()->user()->first_name }}</span>
                                 <span class="d-block text-muted font-weight-medium text-truncate">{{ auth()->user()->email }}</span>
-                                <small class="d-block text-muted"><b>{{ __('details.last login') }}:</b> {{ auth()->user()->previousLoginAt()->diffForHumans() }}</small>
+                                <small class="d-block text-muted"><b>{{ __('details.last login') }}:</b> @if(auth()->user()->previousLoginAt()) {{ auth()->user()->previousLoginAt()->diffForHumans() }} @endisset</small>
 
                             </div>
 
@@ -542,14 +542,24 @@
                                 <b>{{ __('page.dashboard') }}</b>
                             </a>
                         </li>
+                        @if(auth()->user()->hasPermission('users_read'))
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('dashboard.user.index') }}">
-                                <i class="fi fi-users"></i>
-                                <b>{{ __('auth.users') }}</b>
-                            </a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('dashboard.user.index') }}">
+                                    <i class="fi fi-users"></i>
+                                    <b>{{ __('auth.users') }}</b>
+                                </a>
+                            </li>
+                        @endif
+                        @if(auth()->user()->hasPermission('categories_read'))
 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('dashboard.category.index') }}">
+                                    <i class="fi fi-folder-full"></i>
+                                    <b>{{ __('details.categories') }}</b>
+                                </a>
+                            </li>
+                        @endif
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">

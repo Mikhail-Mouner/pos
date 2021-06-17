@@ -1,6 +1,11 @@
 @extends('layouts.dashboard.app')
 
-@section('page-title','HomePage')
+@if(isset($user))
+    @section('page-title','Edit User\'s Data ('.$user->first_name.')')
+@else
+    @section('page-title','Add User')
+@endif
+
 @section('style','')
 
 @section('content')
@@ -152,11 +157,11 @@
                                             <span class="z-index-2 js-file-input-avatar-circle-container d-block absolute-full z-index-1 hide-empty" style="">
                                                 <!-- avatar container -->
                                                 @isset($user)
-                                                <span
-                                                    data-id="0"
-                                                    data-file-name="{{ $user->first_name }}"
-                                                    style="background-image:url('{{ $user->image_path }}')"
-                                                    class="js-file-input-item d-inline-block position-relative overflow-hidden text-center rounded-circle m-0 p-0 animate-bouncein bg-cover w-100 h-100">
+                                                    <span
+                                                        data-id="0"
+                                                        data-file-name="{{ $user->first_name }}"
+                                                        style="background-image:url('{{ $user->image_path }}')"
+                                                        class="js-file-input-item d-inline-block position-relative overflow-hidden text-center rounded-circle m-0 p-0 animate-bouncein bg-cover w-100 h-100">
                                                 </span>
                                                 @endisset
                                             </span>

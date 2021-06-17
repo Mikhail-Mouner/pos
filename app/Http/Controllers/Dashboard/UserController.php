@@ -25,7 +25,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(UserRequest $request)
     {
         $users = User::when($request->search, function ($q) use ($request) {
                 return $q->where('first_name','like','%'.$request->search.'%')
@@ -52,7 +52,7 @@ class UserController extends Controller
      * @param  UserRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
         $image_name = 'no-img.jpg';
         if ($request->has('image')){

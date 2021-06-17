@@ -1,6 +1,6 @@
 @extends('layouts.dashboard.app')
 
-@section('page-title','Users')
+@section('page-title','Categories')
 @section('style','')
 
 @section('content')
@@ -10,7 +10,7 @@
 
     <header class="mb-5">
         <h1 class="h2 mb-0">
-            @lang('auth.users')
+            {{ __('details.categories') }}
         </h1>
 
         <nav aria-label="breadcrumb">
@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    @lang('auth.users')
+                    {{ __('details.categories') }}
                 </li>
             </ol>
         </nav>
@@ -39,12 +39,12 @@
                 <header class="d-flex b-0">
 
                     <h2 class="h5 text-truncate w-100">
-                        {{ __('auth.users') }}
+                        {{ __('details.categories') }}
                         <small class="h6 text-info font-italic font-weight-lighter">
-                            ({{ $users->count() }})
+                            ({{ $categories->count() }})
                         </small>
-                        @if(auth()->user()->hasPermission('users_create'))
-                            <a href="{{ route('dashboard.user.create') }}" class="btn-link">
+                        @if(auth()->user()->hasPermission('categories_create'))
+                            <a href="{{ route('dashboard.category.create') }}" class="btn-link">
                                 <i class="fi fi-plus"></i>
                             </a>
                         @endif
@@ -66,7 +66,7 @@
                 </header>
 
                 <div class="mt--30 mb--60">
-                    <form action="{{ route('dashboard.user.index') }}" method="get" autocomplete="off">
+                    <form action="{{ route('dashboard.category.index') }}" method="get" autocomplete="off">
                         <div class="row">
 
                             <div class="col-md-8">
@@ -81,7 +81,7 @@
                                             value="{{ request()->search }}"
                                         @endisset
                                     />
-                                    <label for="password_confirmation">{{ __('data.search') }}</label>
+                                    <label for="search">{{ __('data.search') }}</label>
                                 </div>
                             </div>
 
@@ -142,37 +142,21 @@
                         <thead>
                         <tr>
                             <th>{{ __('details.code') }}</th>
-                            <th>{{ __('details.image') }}</th>
-                            <th>{{ __('details.first name') }}</th>
-                            <th>{{ __('details.last name') }}</th>
-                            <th>{{ __('details.e-mail') }}</th>
-                            <th>{{ __('details.last login') }}</th>
-                            <th>{{ __('auth.permissions') }}</th>
+                            <th>{{ __('details.name') }}</th>
                             <th>{{ __('action.action') }}</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @forelse($users as $user)
+                        @forelse($categories as $category)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td><div class="w--60 h--60 rounded-circle bg-light bg-cover float-start" style="background-image:url('{{ $user->image_path }}')"></div></td>
-                                <td>{{ $user->first_name }}</td>
-                                <td>{{ $user->last_name }}</td>
-                                <td>{{ $user->email }}</td>
-                                <td>{{ $user->lastLoginAt()?$user->lastLoginAt()->diffForHumans():'-' }}</td>
+                                <td>{{ $category->name }}</td>
                                 <td>
-                                    @forelse($user->allPermissions() as $permission)
-                                        {{ '- '. $permission->display_name  }}<br />
-                                    @empty
-                                        {{ __('data.no data') }}
-                                    @endforelse
-                                </td>
-                                <td>
-                                    @if(auth()->user()->hasPermission('users_update'))
-                                        <a class="btn btn-success btn-sm" href="{{ route('dashboard.user.edit',$user->id) }}"><i class="fi fi-pencil"></i> {{ __('action.edit') }}</a>
+                                    @if(auth()->user()->hasPermission('categories_update'))
+                                        <a class="btn btn-success btn-sm" href="{{ route('dashboard.category.edit',$category->id) }}"><i class="fi fi-pencil"></i> {{ __('action.edit') }}</a>
                                     @endif
-                                    @if(auth()->user()->hasPermission('users_delete'))
-                                        <form action="{{ route('dashboard.user.destroy',$user->id) }}" method="post" style="display: inline-block;">
+                                    @if(auth()->user()->hasPermission('categories_delete'))
+                                        <form action="{{ route('dashboard.category.destroy',$category->id) }}" method="post" style="display: inline-block;">
                                             @csrf
                                             @method('delete')
                                             <button class="btn btn-outline-danger btn-sm btn-delete" type="submit"><i class="fi fi-thrash"></i> {{ __('action.delete') }}</button>

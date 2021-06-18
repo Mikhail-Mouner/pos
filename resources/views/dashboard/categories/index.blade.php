@@ -143,6 +143,7 @@
                         <tr>
                             <th>{{ __('details.code') }}</th>
                             <th>{{ __('details.name') }}</th>
+                            <th>{{ __('details.products count') }}</th>
                             <th>{{ __('action.action') }}</th>
                         </tr>
                         </thead>
@@ -151,6 +152,7 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $category->name }}</td>
+                                <td><a href="{{ route('dashboard.product.index','category='.$category->id) }}"><span class="badge badge-dark badge-soft">{{ $category->products_count }}</span></a></td>
                                 <td>
                                     @if(auth()->user()->hasPermission('categories_update'))
                                         <a class="btn btn-success btn-sm" href="{{ route('dashboard.category.edit',$category->id) }}"><i class="fi fi-pencil"></i> {{ __('action.edit') }}</a>

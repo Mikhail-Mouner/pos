@@ -11,7 +11,7 @@ class Product extends Model implements TranslatableContract
 {
     use HasFactory, Translatable;
 
-    protected $appends = ['image_path'];
+    protected $appends = ['image_path','profit_percent'];
     protected $fillable = ['category_id','image','purchase_price','sale_price','stock'];
     public $translatedAttributes = ['name','description'];
 
@@ -21,5 +21,9 @@ class Product extends Model implements TranslatableContract
     public function getImagePathAttribute($value)
     {
         return asset('uploads/product_images/'.$this->image);
+    }
+    public function getProfitPercentAttribute($value)
+    {
+        return number_format(($this->sale_price - $this->purchase_price) * 100 / $this->purchase_price,2).' %';
     }
 }

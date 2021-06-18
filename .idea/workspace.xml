@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/form/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +220,7 @@
       <workItem from="1623866986163" duration="631000" />
       <workItem from="1623869822569" duration="9923000" />
       <workItem from="1623957713404" duration="6478000" />
-      <workItem from="1624016132860" duration="12139000" />
+      <workItem from="1624016132860" duration="16303000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
       <created>1622930622455</created>
@@ -277,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624030004835</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finish admin/product with translation">
+      <created>1624032221749</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624032221749</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,17 +298,18 @@
     <MESSAGE value="Developing Dashboard/User Page &amp; activity logs" />
     <MESSAGE value="finish admin/category with translation" />
     <MESSAGE value="Fixed Search's Bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Search's Bug" />
+    <MESSAGE value="finish admin/product with translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish admin/product with translation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624031719829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624031719829" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624029998743">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624032219743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624029998743" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624032219743" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1623427871732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -329,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1624021464235" />
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624029784373">
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624036108173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624029784373" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624036108173" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,9 +12,13 @@ class Category extends Model implements TranslatableContract
     use HasFactory, Translatable;
 
     //protected $fillable = ['name'];
-    public $translatedAttributes = ['name'];
+    public $translatedAttributes = ['name','products_count'];
 
     public function products(){
         return $this->hasMany(Product::class);
+    }
+    public function getProductsCountAttribute($value)
+    {
+        return $this->products()->count();
     }
 }

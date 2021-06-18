@@ -52,7 +52,9 @@ return [
     'products' => 'products',
     'last login' => 'Last Login',
     'purchase price' => 'Purchase Price',
+    'profit percent' => 'Profit Percent',
     'sale price' => 'Sale Price',
     'stock' => 'Stock',
+    'products count' => 'Products Count',
 
 ];

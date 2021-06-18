@@ -28,8 +28,10 @@ class ProductController extends Controller
     public function index(ProductRequest $request)
     {
         $products = Product::when($request->search,function ($q) use ($request) {
-            $q->whereTranslationLike('name','%'.$request->search.'%')
+            return $q->whereTranslationLike('name','%'.$request->search.'%')
                 ->orWhereTranslationLike('description', '%'.$request->search.'%');
+        })->when($request->category,function ($q) use ($request) {
+            return $q->whereCategoryId($request->category);
         })->get();
         return view('dashboard.products.index',compact('products'));
     }
@@ -135,6 +137,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        if ($product->image !== 'no-img.png')
+            Storage::disk('public_uploads')->delete('product_images/'.$product->image);
         $product->delete();
         Session::flash('success',__('message.delete'));
         return redirect()->route('dashboard.product.index');

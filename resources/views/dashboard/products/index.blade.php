@@ -67,6 +67,9 @@
 
                 <div class="mt--30 mb--60">
                     <form action="{{ route('dashboard.product.index') }}" method="get" autocomplete="off">
+                        @isset(request()->category)
+                            <input type="hidden" name="category" value="{{ request()->category }}">
+                        @endisset
                         <div class="row">
 
                             <div class="col-md-8">
@@ -78,7 +81,7 @@
                                         id="search"
                                         name="search"
                                         @isset(request()->search)
-                                            value="{{ request()->search }}"
+                                        value="{{ request()->search }}"
                                         @endisset
                                     />
                                     <label for="search">{{ __('data.search') }}</label>
@@ -146,6 +149,7 @@
                             <th>{{ __('details.image') }}</th>
                             <th>{{ __('details.name') }}</th>
                             <th>{{ __('details.description') }}</th>
+                            <th>{{ __('details.profit percent') }}</th>
                             <th>{{ __('details.purchase price') }}</th>
                             <th>{{ __('details.sale price') }}</th>
                             <th>{{ __('details.stock') }}</th>
@@ -156,10 +160,11 @@
                         @forelse($products as $product)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td><span class="badge badge-primary">{{ $product->category->name }}</span></td>
+                                <td><span class="badge badge-primary badge-soft">{{ $product->category->name }}</span></td>
                                 <td><div class="w--60 h--60 rounded-circle bg-light bg-cover float-start" style="background-image:url('{{ $product->image_path }}')"></div></td>
                                 <td>{{ $product->name }}</td>
                                 <td>{!! nl2br(e($product->description)) !!}</td>
+                                <td><span class="badge badge-success badge-soft">{{ $product->profit_percent }}</span></td>
                                 <td>{{ $product->purchase_price }}</td>
                                 <td>{{ $product->sale_price }}</td>
                                 <td>{{ $product->stock }}</td>

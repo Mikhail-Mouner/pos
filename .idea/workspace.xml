@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../templates/smarty/html_frontend/documentation/php-forms.html" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -173,8 +171,8 @@
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\pos\public\uploads" />
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
+      <recent name="E:\xampp\htdocs\pos\public\uploads" />
       <recent name="E:\xampp\htdocs\pos\resources\lang\ar" />
       <recent name="E:\xampp\htdocs\pos\resources\views\messages" />
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\users\form" />
@@ -220,7 +218,7 @@
       <workItem from="1623866986163" duration="631000" />
       <workItem from="1623869822569" duration="9923000" />
       <workItem from="1623957713404" duration="6478000" />
-      <workItem from="1624016132860" duration="16303000" />
+      <workItem from="1624016132860" duration="22864000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
       <created>1622930622455</created>
@@ -285,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624032221749</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add some feature in admin/product">
+      <created>1624036589225</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624036589225</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,29 +304,30 @@
     <MESSAGE value="finish admin/category with translation" />
     <MESSAGE value="Fixed Search's Bug" />
     <MESSAGE value="finish admin/product with translation" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish admin/product with translation" />
+    <MESSAGE value="add some feature in admin/product" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some feature in admin/product" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624031719829">
+    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624038505411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624031719829" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624032219743">
+    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624038505411" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624036585621">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624032219743" />
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1623427871732">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624036585621" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1624042159847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1623427871732" />
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1624042159847" />
     <state x="518" y="286" key="NewPhpFileDialog" timestamp="1623429087710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1623429087710" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1623966162529">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1624042376725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1623966162529" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1624042376725" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1624017928181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -338,10 +344,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1624021464235" />
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624036108173">
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624038266087">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624036108173" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624038266087" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

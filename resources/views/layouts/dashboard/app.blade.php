@@ -192,6 +192,14 @@
                                     </a>
                                 </li>
                                 @endif
+                                @if(auth()->user()->hasPermission('clients_create'))
+                                <li class="dropdown-item">
+                                    <a class="dropdown-link" href="{{ route('dashboard.client.create') }}">
+                                        <i class="fi fi-user-plus"></i>
+                                        {{ __('clients') }}
+                                    </a>
+                                </li>
+                                @endif
 
                             </ul>
 
@@ -533,6 +541,15 @@
                                 <a class="nav-link" href="{{ route('dashboard.product.index') }}">
                                     <i class="fi fi-cart-1"></i>
                                     <b>{{ __('details.products') }}</b>
+                                </a>
+                            </li>
+                        @endif
+                        @if(auth()->user()->hasPermission('clients_read'))
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('dashboard.client.index') }}">
+                                    <i class="fi fi-users"></i>
+                                    <b>{{ __('auth.clients') }}</b>
                                 </a>
                             </li>
                         @endif

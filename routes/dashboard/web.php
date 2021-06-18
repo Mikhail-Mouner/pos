@@ -16,6 +16,7 @@ Route::group(
         Route::resource('users', 'UserController')->names('user');
         Route::resource('categories', 'CategoryController')->names('category');
         Route::resource('products', 'ProductController')->names('product');
+        Route::resource('clients', 'ClientController')->names('client');
 
 
     });

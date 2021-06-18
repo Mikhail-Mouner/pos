@@ -70,7 +70,7 @@
     ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
 
 -->
-<body class="layout-admin aside-sticky header-sticky" data-s2t-class="btn-primary btn-sm bg-gradient-default rounded-circle b-0">
+<body class="layout-admin aside-sticky header-sticky" data-s2t-class="btn-primary btn-sm bg-gradient-default rounded-circle b-0" data-gfont="Aref Ruqaa">
 
 <div id="wrapper" class="d-flex align-items-stretch flex-column">
 
@@ -163,69 +163,36 @@
                         <li class="nav-item dropdown">
 
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="mainNavHome">
-                                Shortcuts
+                                <i class="fi fi-plus"></i> {{ __('action.add') }}
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-clean" aria-labelledby="mainNavHome">
 
-                                <li class="dropdown-item dropdown">
-                                    <a class="dropdown-link" href="#!" data-toggle="dropdown">
-                                        <i class="fi fi-cart-1"></i>
-                                        Orders
-                                    </a>
-
-                                    <ul class="dropdown-menu dropdown-menu-hover shadow-lg b-0 m-0">
-                                        <li class="dropdown-item">
-                                            <a class="dropdown-link" href="#!">
-                                                <i class="fi fi-plus"></i>
-                                                Create Order
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a class="dropdown-link" href="#!">
-                                                <i class="fi fi-list-checked"></i>
-                                                List Orders
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a class="dropdown-link" href="#!">
-                                                <i class="fi fi-box"></i>
-                                                Archived Orders
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a class="dropdown-link" href="#!">
-                                                <i class="fi fi-close"></i>
-                                                Canceled Orders
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </li>
+                                @if(auth()->user()->hasPermission('users_create'))
                                 <li class="dropdown-item">
-                                    <a class="dropdown-link" href="#!">
+                                    <a class="dropdown-link" href="{{ route('dashboard.user.create') }}">
                                         <i class="fi fi-user-plus"></i>
-                                        Create Account
+                                        {{ __('auth.user') }}
                                     </a>
                                 </li>
+                                @endif
+                                @if(auth()->user()->hasPermission('categories_create'))
                                 <li class="dropdown-item">
-                                    <a class="dropdown-link" href="#!">
-                                        <i class="fi fi-users"></i>
-                                        Manage Users
+                                    <a class="dropdown-link" href="{{ route('dashboard.category.create') }}">
+                                        <i class="fi fi-folder-full"></i>
+                                        {{ __('details.category') }}
                                     </a>
                                 </li>
+                                @endif
+                                @if(auth()->user()->hasPermission('products_create'))
                                 <li class="dropdown-item">
-                                    <a class="dropdown-link" href="#!">
-                                        <i class="fi fi-graph"></i>
-                                        Reports
+                                    <a class="dropdown-link" href="{{ route('dashboard.product.create') }}">
+                                        <i class="fi fi-cart-1"></i>
+                                        {{ __('details.product') }}
                                     </a>
                                 </li>
-                                <li class="dropdown-item">
-                                    <a class="dropdown-link" href="#!">
-                                        <i class="fi fi-task-list"></i>
-                                        Tasks
-                                    </a>
-                                </li>
+                                @endif
+
                             </ul>
 
                         </li>
@@ -557,6 +524,15 @@
                                 <a class="nav-link" href="{{ route('dashboard.category.index') }}">
                                     <i class="fi fi-folder-full"></i>
                                     <b>{{ __('details.categories') }}</b>
+                                </a>
+                            </li>
+                        @endif
+                        @if(auth()->user()->hasPermission('products_read'))
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('dashboard.product.index') }}">
+                                    <i class="fi fi-cart-1"></i>
+                                    <b>{{ __('details.products') }}</b>
                                 </a>
                             </li>
                         @endif

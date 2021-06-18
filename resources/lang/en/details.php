@@ -51,5 +51,8 @@ return [
     'product' => 'product',
     'products' => 'products',
     'last login' => 'Last Login',
+    'purchase price' => 'Purchase Price',
+    'sale price' => 'Sale Price',
+    'stock' => 'Stock',
 
 ];

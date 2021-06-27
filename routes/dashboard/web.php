@@ -17,6 +17,9 @@ Route::group(
         Route::resource('categories', 'CategoryController')->names('category');
         Route::resource('products', 'ProductController')->names('product');
         Route::resource('clients', 'ClientController')->names('client');
+        Route::resource('client.order', 'Client\\OrderController')->names('client.order');
+        Route::get('orders', 'OrderController@index')->name('order.index');
+        Route::get('orders/{order}/products', 'OrderController@product')->name('order.product');
 
 
     });

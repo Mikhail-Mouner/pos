@@ -56,5 +56,8 @@ return [
     'sale price' => 'Sale Price',
     'stock' => 'Stock',
     'products count' => 'Products Count',
+    'order' => 'Order',
+    'orders' => 'Orders',
+    'previous order' => 'Previous Order',
 
 ];

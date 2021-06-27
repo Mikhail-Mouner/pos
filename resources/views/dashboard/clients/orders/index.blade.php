@@ -145,7 +145,6 @@
                             <th>{{ __('details.name') }}</th>
                             <th>{{ __('details.phone') }}</th>
                             <th>{{ __('details.address') }}</th>
-                            <th>{{ __('details.order') }}</th>
                             <th>{{ __('action.action') }}</th>
                         </tr>
                         </thead>
@@ -158,13 +157,6 @@
                                     <i class="fi fi-phone"></i> {{ $client->phone }}
                                 </td>
                                 <td>{{ $client->address }}</td>
-                                <td>
-                                    @if(auth()->user()->hasPermission('orders_create'))
-                                        <a class="btn btn-link badge-primary badge" href="{{ route('dashboard.client.order.create',$client->id) }}">{{ __('add order') }}</a>
-                                    @else
-                                        <a class="btn btn-link badge-secondary text-white badge disabled" href="">{{ __('add order') }}</a>
-                                    @endif
-                                </td>
                                 <td>
                                     @if(auth()->user()->hasPermission('clients_update'))
                                         <a class="btn btn-success btn-sm" href="{{ route('dashboard.client.edit',$client->id) }}"><i class="fi fi-pencil"></i> {{ __('action.edit') }}</a>

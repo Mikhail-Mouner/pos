@@ -19,4 +19,5 @@ return [
     'reset' => 'Reset',
     'try again' => 'Try Again',
     'calculate' => 'Calculate',
+    'error' => 'Error',
 ];

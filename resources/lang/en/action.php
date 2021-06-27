@@ -37,4 +37,5 @@ return [
     /* Todo : translate to arabic*/
     'create' => 'Create',
     'read' => 'Read',
+    'add order' => 'Add Order',
 ];

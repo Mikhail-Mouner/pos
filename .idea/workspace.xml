@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
+    <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="finish admin/client">
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/form/edit/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/form/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/form/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/dashboard/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +165,7 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/yadahan/laravel-authentication-log" />
       <path value="$PROJECT_DIR$/vendor/astrotomic/laravel-translatable" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-activitylog" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tDnnOcQTtDEmpC2XRi6fAhuDHn" />
@@ -163,19 +179,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../templates/smarty/html_frontend/documentation/php-forms.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/clients/orders/form/edit" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\pos\public\uploads\user_images" />
-      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\clients\orders\form\edit" />
       <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
       <recent name="E:\xampp\htdocs\pos\public\uploads" />
       <recent name="E:\xampp\htdocs\pos\resources\lang\ar" />
       <recent name="E:\xampp\htdocs\pos\resources\views\messages" />
-      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\users\form" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard\clients" />
+      <recent name="E:\xampp\htdocs\pos\public\uploads\user_images" />
+      <recent name="E:\xampp\htdocs\pos\resources\views\dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +235,16 @@
       <workItem from="1623866986163" duration="631000" />
       <workItem from="1623869822569" duration="9923000" />
       <workItem from="1623957713404" duration="6478000" />
-      <workItem from="1624016132860" duration="22864000" />
+      <workItem from="1624016132860" duration="24059000" />
+      <workItem from="1624113699477" duration="3889000" />
+      <workItem from="1624119601733" duration="7582000" />
+      <workItem from="1624212026688" duration="7280000" />
+      <workItem from="1624301605425" duration="10261000" />
+      <workItem from="1624389149005" duration="3876000" />
+      <workItem from="1624398497595" duration="992000" />
+      <workItem from="1624474151889" duration="5429000" />
+      <workItem from="1624566798304" duration="4007000" />
+      <workItem from="1624817539693" duration="2120000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
       <created>1622930622455</created>
@@ -290,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624036589225</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="finish admin/client">
+      <created>1624044471163</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1624044471163</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,17 +338,18 @@
     <MESSAGE value="Fixed Search's Bug" />
     <MESSAGE value="finish admin/product with translation" />
     <MESSAGE value="add some feature in admin/product" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some feature in admin/product" />
+    <MESSAGE value="finish admin/client" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish admin/client" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624038505411">
+    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624567204637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624038505411" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624036585621">
+    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624567204637" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624822771391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624036585621" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624822771391" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1624042159847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -324,14 +358,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1623429087710" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1624042376725">
+    <state x="547" y="73" key="RollbackChangesDialog" timestamp="1624121585098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1624042376725" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1624017928181">
+    <state x="547" y="73" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624121585098" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1624399461931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1624017928181" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1624399461931" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1624817541827">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1624817541827" />
+    <state x="492" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624569219219">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1624569219219" />
     <state x="645" y="106" width="718" height="703" key="dock-window-1" timestamp="1623427989265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -340,14 +382,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1366.728@0.0.1366.728" timestamp="1623962354515" />
-    <state x="339" y="157" width="672" height="677" key="run.anything.popup" timestamp="1624021464235">
+    <state x="339" y="157" width="672" height="677" key="run.anything.popup" timestamp="1624479509558">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1624021464235" />
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624038266087">
+    <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1624479509558" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624820247577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624038266087" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624820247577" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,6 +398,11 @@
           <url>file://$PROJECT_DIR$/resources/views/dashboard/products/form/index.blade.php</url>
           <line>146</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/spatie/laravel-activitylog/src/Traits/LogsActivity.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

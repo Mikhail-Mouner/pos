@@ -7,12 +7,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait;
+use Spatie\Activitylog\Models\Activity;
+use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\Activitylog\LogOptions;
 use Yadahan\AuthenticationLog\AuthenticationLogable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable, LaratrustUserTrait, AuthenticationLogable;
-
+    use HasFactory, Notifiable, LaratrustUserTrait, AuthenticationLogable, LogsActivity;
     protected $appends = ['image_path'];
 
     /**
@@ -59,6 +61,18 @@ class User extends Authenticatable
     public function getImagePathAttribute($value)
     {
         return asset('uploads/user_images/'.$this->image);
+    }
+    public function tapActivity(Activity $activity, string $eventName)
+    {
+        $activity->description = " $this->name ({$eventName})";
+        $activity->log_name = __('auth.user');
+    }
+
+    public function getActivitylogOptions(): LogOptions
+    {
+        return LogOptions::defaults()
+            ->logOnly(['first_name'])
+            ;
     }
 
 }

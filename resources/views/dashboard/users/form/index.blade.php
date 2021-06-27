@@ -240,14 +240,16 @@
                                             $models = [
                                                 ['prefix'=>'users','model'=>__('auth.user')],
                                                 ['prefix'=>'categories','model'=>__('details.categories')],
-                                                ['prefix'=>'products','model'=>__('details.products')]
+                                                ['prefix'=>'products','model'=>__('details.products')],
+                                                ['prefix'=>'clients','model'=>__('auth.clients')],
+                                                ['prefix'=>'orders','model'=>__('details.orders')]
                                             ];
 
                                             $maps = [
                                                 ['prefix'=>'create','map'=>__('action.create'),'color'=>'primary'],
                                                 ['prefix'=>'delete','map'=>__('action.delete'),'color'=>'danger'],
                                                 ['prefix'=>'read','map'=>__('action.read'),'color'=>'info'],
-                                                ['prefix'=>'update','map'=>__('action.update'),'color'=>'success'],
+                                                ['prefix'=>'update','map'=>__('action.update'),'color'=>'success']
                                             ];
                                         @endphp
                                         <div class="col-3">

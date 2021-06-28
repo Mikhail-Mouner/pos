@@ -52,6 +52,60 @@
                 </header>
 
                 <div class="mt--30 mb--60">
+                    <!-- INFO BOX -->
+                    <section>
+                        <div class="row">
+                            @foreach($pages as $key => $page)
+                                <div class="col-12 @if($loop->iteration >3 ) col-lg-6 @else col-lg-4 @endif mb-3">
+
+                                    <div class="bg-gradient-{{ $page['color'] }} text-white p-5 rounded text-center">
+
+											<span class="badge badge-{{ $page['color'] }} fs--45 w--100 h--100 badge-pill rounded-circle">
+												<i class="fi fi-{{ $page['icon'] }} mt-1"></i>
+											</span>
+
+                                        <h3 class="fs--20 mt--50">
+                                            {{ $page['name'] }}
+                                        </h3>
+
+                                        <p>
+                                            {{ $page['count'] }}
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            @endforeach
+
+                            <div class="col-12 col-md-12 h--500">
+
+                                <canvas id="smartySimple" class="chartjs"
+                                        data-chartjs-dots="false"
+                                        data-chartjs-legend="top"
+                                        data-chartjs-grid="true"
+                                        data-chartjs-tooltip="true"
+
+                                        data-chartjs-title="{{ __('details.orders') }}"
+                                        data-chartjs-xaxes-label="{{ __('date.month') }}"
+                                        data-chartjs-yaxes-label="{{ __('details.orders') }}"
+                                        data-chartjs-line-width="10"
+
+                                        data-chartjs-type="line"
+                                        data-chartjs-labels='{{ json_encode($months) }}'
+                                        data-chartjs-datasets='[{
+                                                "label":								"{{ __('details.orders') }}",
+                                                "data":								 {{ json_encode($total_price) }},
+                                                "fill":								 true,
+                                                "backgroundColor":					"rgba(133, 145, 255, 0.5)"
+                                        }]'></canvas>
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- /INFO BOX -->
+
+
                     <table class="table-datatable table table-bordered table-hover table-striped"
                            data-lng-empty="{{ __('data.no data') }}"
                            data-lng-page-info="Showing _START_ to _END_ of _TOTAL_ entries"

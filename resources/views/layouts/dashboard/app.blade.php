@@ -553,29 +553,16 @@
                                 </a>
                             </li>
                         @endif
+                        @if(auth()->user()->hasPermission('orders_read'))
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-										<span class="group-icon float-end">
-											<i class="fi fi-arrow-end-slim"></i>
-											<i class="fi fi-arrow-down-slim"></i>
-										</span>
-                                <i class="fi fi-code"></i>
-                                <span class="badge badge-warning float-end fs--11 mt-1">new</span>
-                                Components
-                            </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('dashboard.order.index') }}">
+                                    <i class="fi fi-cart-1"></i>
+                                    <b>{{ __('details.orders') }}</b>
+                                </a>
+                            </li>
+                        @endif
 
-                            <ul class="nav flex-column">
-
-                                <li class="nav-item">
-                                    <a class="nav-link js-ajax" href="#">
-                                        Alerts
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </li>
 
 
 

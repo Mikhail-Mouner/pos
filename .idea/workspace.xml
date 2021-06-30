@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/Client/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/Client/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/date.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/date.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +227,7 @@
       <workItem from="1624566798304" duration="4007000" />
       <workItem from="1624817539693" duration="7337000" />
       <workItem from="1624914671911" duration="2283000" />
-      <workItem from="1625086206967" duration="3930000" />
+      <workItem from="1625086206967" duration="4151000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
       <created>1622930622455</created>
@@ -328,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624822790050</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed Some Bug">
+      <created>1625090554603</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625090554603</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,17 +337,18 @@
     <MESSAGE value="add some feature in admin/product" />
     <MESSAGE value="finish admin/client" />
     <MESSAGE value="finish Clients' Order &amp; add Activity logs plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish Clients' Order &amp; add Activity logs plugin" />
+    <MESSAGE value="Fixed Some Bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Some Bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624567204637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1624567204637" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1624822771391">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1625090549913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624822771391" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1625090549913" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1624914732656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

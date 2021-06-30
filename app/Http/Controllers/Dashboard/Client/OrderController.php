@@ -124,7 +124,6 @@ class OrderController extends Controller
             ]);
 
         }//end of foreach
-
         $order->update([
             'total_price' => $total_price
         ]);

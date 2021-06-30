@@ -169,36 +169,36 @@
                             <ul class="dropdown-menu dropdown-menu-clean" aria-labelledby="mainNavHome">
 
                                 @if(auth()->user()->hasPermission('users_create'))
-                                <li class="dropdown-item">
-                                    <a class="dropdown-link" href="{{ route('dashboard.user.create') }}">
-                                        <i class="fi fi-user-plus"></i>
-                                        {{ __('auth.user') }}
-                                    </a>
-                                </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="{{ route('dashboard.user.create') }}">
+                                            <i class="fi fi-user-plus"></i>
+                                            {{ __('auth.user') }}
+                                        </a>
+                                    </li>
                                 @endif
                                 @if(auth()->user()->hasPermission('categories_create'))
-                                <li class="dropdown-item">
-                                    <a class="dropdown-link" href="{{ route('dashboard.category.create') }}">
-                                        <i class="fi fi-folder-full"></i>
-                                        {{ __('details.category') }}
-                                    </a>
-                                </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="{{ route('dashboard.category.create') }}">
+                                            <i class="fi fi-folder-full"></i>
+                                            {{ __('details.category') }}
+                                        </a>
+                                    </li>
                                 @endif
                                 @if(auth()->user()->hasPermission('products_create'))
-                                <li class="dropdown-item">
-                                    <a class="dropdown-link" href="{{ route('dashboard.product.create') }}">
-                                        <i class="fi fi-cart-1"></i>
-                                        {{ __('details.product') }}
-                                    </a>
-                                </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="{{ route('dashboard.product.create') }}">
+                                            <i class="fi fi-cart-1"></i>
+                                            {{ __('details.product') }}
+                                        </a>
+                                    </li>
                                 @endif
                                 @if(auth()->user()->hasPermission('clients_create'))
-                                <li class="dropdown-item">
-                                    <a class="dropdown-link" href="{{ route('dashboard.client.create') }}">
-                                        <i class="fi fi-user-plus"></i>
-                                        {{ __('clients') }}
-                                    </a>
-                                </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="{{ route('dashboard.client.create') }}">
+                                            <i class="fi fi-user-plus"></i>
+                                            {{ __('auth.clients') }}
+                                        </a>
+                                    </li>
                                 @endif
 
                             </ul>
@@ -511,7 +511,7 @@
                 <nav class="nav-deep nav-deep-dark nav-deep-hover fs--15 pb-5">
                     <ul class="nav flex-column">
 
-                        <li class="nav-item active">
+                        <li class="nav-item {{ (request()->is('*/dashboard')) ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('dashboard.index') }}">
                                 <i class="fi fi-menu-dots"></i>
                                 <b>{{ __('page.dashboard') }}</b>
@@ -519,7 +519,7 @@
                         </li>
                         @if(auth()->user()->hasPermission('users_read'))
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ (request()->is('*/dashboard/users*')) ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('dashboard.user.index') }}">
                                     <i class="fi fi-users"></i>
                                     <b>{{ __('auth.users') }}</b>
@@ -528,7 +528,7 @@
                         @endif
                         @if(auth()->user()->hasPermission('categories_read'))
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ (request()->is('*/dashboard/categories*')) ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('dashboard.category.index') }}">
                                     <i class="fi fi-folder-full"></i>
                                     <b>{{ __('details.categories') }}</b>
@@ -537,7 +537,7 @@
                         @endif
                         @if(auth()->user()->hasPermission('products_read'))
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ (request()->is('*/dashboard/products*')) ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('dashboard.product.index') }}">
                                     <i class="fi fi-cart-1"></i>
                                     <b>{{ __('details.products') }}</b>
@@ -546,7 +546,7 @@
                         @endif
                         @if(auth()->user()->hasPermission('clients_read'))
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ (request()->is('*/dashboard/clients*')) || (request()->is('*/dashboard/client*')) ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('dashboard.client.index') }}">
                                     <i class="fi fi-users"></i>
                                     <b>{{ __('auth.clients') }}</b>
@@ -555,7 +555,7 @@
                         @endif
                         @if(auth()->user()->hasPermission('orders_read'))
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ (request()->is('*/dashboard/orders*')) ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('dashboard.order.index') }}">
                                     <i class="fi fi-cart-1"></i>
                                     <b>{{ __('details.orders') }}</b>

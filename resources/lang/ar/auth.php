@@ -26,5 +26,9 @@ return [
     "admins" => "المشرفين",
     "super admin" => "المشرف المتميز",
     "super admins" => "المشرفين المميزين",
+    "permissions" => "الصلحيات",
+    "permission" => "الصلحية",
+    "client" => "العميل",
+    "clients" => "العملاء",
 
 ];

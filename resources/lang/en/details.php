@@ -47,7 +47,6 @@ return [
     'status' => 'Status',
     'categories' => 'Categories',
     'category' => 'Category',
-    /* Todo : translate to arabic*/
     'product' => 'product',
     'products' => 'products',
     'last login' => 'Last Login',

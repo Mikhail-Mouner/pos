@@ -18,7 +18,7 @@ return [
     'week'=>'Week',
     'month'=>'Month',
     'year'=>'Year',
-    'dayly'=>'Dayly',
+    'daily'=>'Daily',
     'weekly'=>'Weekly',
     'monthly'=>'Monthly',
     'yearly'=>'Yearly',

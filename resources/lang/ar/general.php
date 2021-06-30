@@ -2,9 +2,9 @@
 
 return [
 
-    'factors' => 'Factors',
-    'factor' => 'Factor',
-    'companies' => 'Companies',
-    'company' => 'Company',
+    'factors' => 'المصانع',
+    'factor' => 'المصنع',
+    'companies' => 'الشركات',
+    'company' => 'الشركة',
 
 ];

@@ -34,7 +34,6 @@ return [
     'Comment' => 'Comment',
     'reply' => 'Reply',
     'add' => 'Add',
-    /* Todo : translate to arabic*/
     'create' => 'Create',
     'read' => 'Read',
     'add order' => 'Add Order',

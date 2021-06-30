@@ -19,4 +19,5 @@ return [
     'reset' => 'إعادة تعيين',
     'try again' => 'حاول مرة أخرى',
     'calculate' => 'احسب',
+    'error' => 'خطا',
 ];

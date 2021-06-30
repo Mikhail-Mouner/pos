@@ -19,11 +19,11 @@ class DashboardController extends Controller
         $activities = Activity::with('subject')->latest()->get();
 
         $pages = [
-            'users'  => ['name'=>__('auth.users'), 'icon'=>"users", 'color'=>"success", 'count'=> User::WhereRoleIs('admin')->count() ],
-            'clients'=> ['name'=>__('auth.clients'), 'icon'=>"users", 'color'=>"primary", 'count'=> Client::count() ],
-            'categories'=> ['name'=>__('details.categories'), 'icon'=>"folder-full", 'color'=>"danger", 'count'=> Category::count() ],
-            'products'=> ['name'=>__('details.products'), 'icon'=>"cart-1", 'color'=>"dark", 'count'=> Product::count() ],
-            'orders'=> ['name'=>__('details.orders'), 'icon'=>"cart-1", 'color'=>"secondary", 'count'=> Order::count() ],
+            'users'  => ['name'=>__('auth.users'), 'icon'=>"users", 'color'=>"success", 'count'=> User::WhereRoleIs('admin')->count(), 'route'=>route('dashboard.user.index') ],
+            'clients'=> ['name'=>__('auth.clients'), 'icon'=>"users", 'color'=>"primary", 'count'=> Client::count(), 'route'=>route('dashboard.client.index') ],
+            'categories'=> ['name'=>__('details.categories'), 'icon'=>"folder-full", 'color'=>"danger", 'count'=> Category::count(), 'route'=>route('dashboard.category.index') ],
+            'products'=> ['name'=>__('details.products'), 'icon'=>"cart-1", 'color'=>"dark", 'count'=> Product::count(), 'route'=>route('dashboard.product.index') ],
+            'orders'=> ['name'=>__('details.orders'), 'icon'=>"cart-1", 'color'=>"secondary", 'count'=> Order::count(), 'route'=>route('dashboard.order.index') ],
         ];
         $months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         $total_price = [];

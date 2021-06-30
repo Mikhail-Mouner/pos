@@ -56,8 +56,10 @@
                     <section>
                         <div class="row">
                             @foreach($pages as $key => $page)
+
                                 <div class="col-12 @if($loop->iteration >3 ) col-lg-6 @else col-lg-4 @endif mb-3">
 
+                                <a href="{{ $page['route'] }}" class="text-decoration-none">
                                     <div class="bg-gradient-{{ $page['color'] }} text-white p-5 rounded text-center">
 
 											<span class="badge badge-{{ $page['color'] }} fs--45 w--100 h--100 badge-pill rounded-circle">
@@ -74,6 +76,7 @@
 
                                     </div>
 
+                                </a>
                                 </div>
                             @endforeach
 
@@ -87,7 +90,7 @@
 
                                         data-chartjs-title="{{ __('details.orders') }}"
                                         data-chartjs-xaxes-label="{{ __('date.month') }}"
-                                        data-chartjs-yaxes-label="{{ __('details.orders') }}"
+                                        data-chartjs-yaxes-label="{{ __('details.orders') }} (EGP)"
                                         data-chartjs-line-width="10"
 
                                         data-chartjs-type="line"

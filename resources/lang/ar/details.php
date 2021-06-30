@@ -45,5 +45,16 @@ return [
     "more details" => "المزيد من التفاصيل",
     "status" => "الحالة",
     "categories" => "الفئات",
-    "category" => "الفئة"
+    "category" => "الفئة",
+    'product' => 'المنتج',
+    'products' => 'المنتجات',
+    'last login' => 'اخر تسجيل دخول',
+    'purchase price' => 'سعر الشراء',
+    'profit percent' => 'نسبة الربح',
+    'sale price' => 'سعر البيع',
+    'stock' => 'المخزون',
+    'products count' => 'عدد المنتجات',
+    'order' => 'الطلب',
+    'orders' => 'الطلبات',
+    'previous order' => 'الطلبات السابقة',
 ];

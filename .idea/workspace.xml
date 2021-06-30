@@ -3,12 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="12e39c3c-4b66-47d4-be77-be52fa83c933" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/Client/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/Client/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +175,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/clients/orders/form/edit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../index.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -232,6 +241,8 @@
       <workItem from="1624474151889" duration="5429000" />
       <workItem from="1624566798304" duration="4007000" />
       <workItem from="1624817539693" duration="7337000" />
+      <workItem from="1624914671911" duration="2283000" />
+      <workItem from="1625086206967" duration="3930000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Ar &amp; En files">
       <created>1622930622455</created>
@@ -345,10 +356,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1624822771391" />
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1624042159847">
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1624914732656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1624042159847" />
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1624914732656" />
     <state x="518" y="286" key="NewPhpFileDialog" timestamp="1623429087710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -361,10 +372,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1624399461931" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1624817541827">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1625086932978">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1624817541827" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1625086932978" />
     <state x="492" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624569219219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -381,10 +392,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1624479509558" />
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1624831161025">
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup" timestamp="1625090440465">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1624831161025" />
+    <state x="339" y="5" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1625090440465" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

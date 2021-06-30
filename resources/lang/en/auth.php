@@ -27,7 +27,6 @@ return [
     "admins" => "Admins",
     "super admin" => "Super Admin",
     "super admins" => "Super Admins",
-    /* Todo : translate to arabic*/
     "permissions" => "Permissions",
     "permission" => "Permission",
     "client" => "Client",
